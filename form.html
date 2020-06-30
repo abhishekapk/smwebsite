@@ -1,23 +1,34 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en-US">
-
 <head>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <meta name="author" content="SemiColonWeb" />
 
 <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Raleway:300,400,500,600,700|Crete+Round:400i" rel="stylesheet" type="text/css" />
-
 <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
 <link rel="stylesheet" href="style.css" type="text/css" />
-<link rel="stylesheet" href="css/swiper.css" type="text/css" />
 <link rel="stylesheet" href="css/dark.css" type="text/css" />
 <link rel="stylesheet" href="css/font-icons.css" type="text/css" />
 <link rel="stylesheet" href="css/animate.css" type="text/css" />
 <link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
 <link rel="stylesheet" href="css/responsive.css" type="text/css" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="css/custom.css" type="text/css" />
 
-<title>Bhartiya Shikshan Mandal</title>
+<title>Form Registration</title>
+<style>
+.form-group > label.error {
+	display: block !important;
+	text-transform: none;
+}
+
+.form-group input.valid ~ label.error,
+.form-group input[type="text"] ~ label.error,
+.form-group input[type="email"] ~ label.error,
+.form-group input[type="number"] ~ label.error,
+.form-group select ~ label.error,
+.form-group textarea ~ label.error { display: none !important; }
+</style>
 </head>
 <body class="stretched">
 
@@ -38,7 +49,7 @@
 </div>
 <nav id="primary-menu">
 <ul>
-<li class="current"><a href="#"><div>Home</div></a>
+<li><a href="index.html"><div>Home</div></a>
 </li>
 <li class="mega-menu"><a href="#"><div>About</div></a>
 </li>
@@ -55,7 +66,7 @@
 </ul>
 </li>
 
-<li><a href="#"><div>Login</div></a>
+<li class="current"><a href="#"><div>Login</div></a>
 	<ul>
 	<li><a href="admin.html"><div>Admin</div></a>
 	<li><a href="#"><div>Zone Admin</div></a>
@@ -75,89 +86,104 @@
 </div>
 </div>
 </header>
-<section id="slider" class="slider-element slider-parallax swiper_wrapper full-screen clearfix">
-<div class="slider-parallax-inner">
-<div class="swiper-container swiper-parent">
-<div class="swiper-wrapper">
-<div class="swiper-slide dark" style="background-image: url('images/test.jpg');">
+
+<section id="page-title">
 <div class="container clearfix">
-<div class="slider-caption slider-caption-center">
-<h2 data-animate="fadeInUp">Bhartiya Shikshan Mandal<br>Bilaspur</h2>
-<p class="d-none d-sm-block" data-animate="fadeInUp" data-delay="200">It aims at evolving National Education Policy, Curriculum, System &Methodology based on integral Bharatiya vision, rooted in its eternal ethos and centered at overall development of the country.A number of educational, Intellectual and experimental activities are being conducted in all parts of the country both at school and higher education levels to actualize this noble mission of reestablishing Bharatiya Education System.</p>
+<h1>Registration Form</h1>
+<span>Bilaspur Zone</span>
+<ol class="breadcrumb">
+<li class="breadcrumb-item"><a href="#">Form</a></li>
+<!-- <li class="breadcrumb-item"><a href="#"></a></li> -->
+<li class="breadcrumb-item active" aria-current="page">Bilaspur Zone</li>
+</ol>
 </div>
-</div>
-</div>
-<!-- <div class="swiper-slide dark">
-<div class="container clearfix">
-<div class="slider-caption slider-caption-center">
-<h2 data-animate="fadeInUp">Beautifully Flexible</h2>
-<p class="d-none d-sm-block" data-animate="fadeInUp" data-delay="200">Looks beautiful &amp; ultra-sharp on Retina Screen Displays. Powerful Layout with Responsive functionality that can be adapted to any screen size.</p>
-</div>
-</div>
-<div class="video-wrap">
-<video poster="images/videos/deskwork.jpg" preload="auto" loop autoplay muted>
-<source src='images/videos/deskwork.mp4' type='video/mp4' />
-<source src='images/videos/deskwork.webm' type='video/webm' />
-</video>
-<div class="video-overlay" style="background-color: rgba(0,0,0,0.55);"></div>
-</div>
-</div>
-<div class="swiper-slide" style="background-image: url('images/slider/swiper/3.jpg'); background-position: center top;">
-<div class="container clearfix">
-<div class="slider-caption">
-<h2 data-animate="fadeInUp">Great Performance</h2>
-<p class="d-none d-sm-block" data-animate="fadeInUp" data-delay="200">You'll be surprised to see the Final Results of your Creation &amp; would crave for more.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="slider-arrow-left"><i class="icon-angle-left"></i></div>
-<div class="slider-arrow-right"><i class="icon-angle-right"></i></div>
-<div class="slide-number"><div class="slide-number-current"></div><span>/</span><div class="slide-number-total"></div></div>
-</div>
-</div> -->
 </section>
 
 <section id="content">
 <div class="content-wrap">
-
 <div class="container clearfix">
-<div class="heading-block center nobottomborder bottommargin-lg">
-<h1>BHARTIYA SHIKHAN MANDAL</h1>
-<h2><span>भारतीय शिक्षण मण्डल</span></h2>
-<span>भारतीय शिक्षण मण्डल राष्ट्रीय स्वयंसेवक संघ का एक आनुसंगिक संगठन है जो शिक्षाक्षेत्र में राष्ट्रीय पुनरुत्थान के उद्देश्य से कार्यरत है। इसकी स्थापना सन 1969 में रामनवमी के दिन हुई थी। इसके मुख्य उद्देश्य हैं- भारत की एकात्म जीवनदृृष्टि पर आधारित तथा देश की सांस्कृतिक एवं ऐतिहासिक अनुभूति से उपजी, राष्ट्र के समग्र विकास पर केंद्रित राष्ट्रीय शिक्षा नीति, पाठ्यचर्या, व्यवस्था तथा शिक्षणविधि का विकास आदि। इसका केन्द्रीय कार्यालय नागपुर में है।</span>
+<div class="form-widget">
+<div class="form-result"></div>
+<!-- <div class="row">
+<div class="col-lg-6"> -->
+<form class="row" id="event-registration" action="http://themes.semicolonweb.com/html/canvas/include/form.php" method="post" enctype="multipart/form-data">
+<div class="form-process"></div>
+<div class="col-6 form-group">
+<label>First Name:</label>
+<input type="text" name="event-registration-first-name" id="event-registration-first-name" class="form-control required" value="" placeholder="Enter your First Name">
 </div>
-<div class="col_one_third nobottommargin">
-<div class="heading-block fancy-title nobottomborder title-bottom-border">
-<h4>An <span>Introduction</span>.</h4>
+<div class="col-6 form-group">
+<label>Last Name:</label>
+<input type="text" name="event-registration-last-name" id="event-registration-last-name" class="form-control required" value="" placeholder="Enter your Last Name">
 </div>
-<p style="text-align: justify;">Bharatiya Shikshan Mandal was founded on the auspicious day of Rama Navami in the year 1969 is working with the objective ofnational resurgence in the field of education. It aims at evolving National Education Policy, Curriculum, System &Methodology based on integral Bharatiya vision, rooted in its eternal ethos and centered at overall development of the country.A number of educational, Intellectual and experimental activities are being conducted in all parts of the country both at school and higher education levels to actualize this noble mission of reestablishing Bharatiya Education System. <br> <a href="about.html">know more</a></p>
+<div class="col-12 form-group">
+<label>Email:</label>
+<input type="email" name="event-registration-email" id="event-registration-email" class="form-control required" value="" placeholder="Enter your Email Address">
 </div>
-<div class="col_one_third nobottommargin">
-<div class="heading-block fancy-title nobottomborder title-bottom-border">
-<h4>History.</h4>
+<div class="col-6 form-group">
+<label>Gender:</label><br>
+<div class="form-check form-check-inline">
+<input class="form-check-input required" type="radio" name="event-registration-gender" id="event-registration-gender-male" value="Male">
+<label class="form-check-label nott" for="event-registration-gender-male">Male</label>
 </div>
-<p style="text-align: justify;">Bhartiya Shiksha Mandal received the registration number F 1738 from the Charity Commissioner of Mumbai. A primary meeting was held in the house of Shri Sriram Mantri at Mumbai on Ramnavami 27th August. Mananeeya Balasaheb Deoras along with 25 educationists, was present in the meeting and rendered his guidance. Due to this, we observe Ramnavami as our foundation day.<br> <a href="about.html">know more</a></p>
+<div class="form-check form-check-inline">
+<input class="form-check-input" type="radio" name="event-registration-gender" id="event-registration-gender-female" value="Female">
+<label class="form-check-label nott" for="event-registration-gender-female">Female</label>
 </div>
-<div class="col_one_third nobottommargin col_last">
-<div class="heading-block fancy-title nobottomborder title-bottom-border">
-<h4>Vision and<span> Mission</span>.</h4>
 </div>
-<p style="text-align: justify;">The goal of the education should be ' The holistic personality development of students in the context of the national resurgence. Indian culture should be reflected from the personality of the students. All the members of the teaching fraternity such as the teachers, the administrators of the alma-maters, and the parents should get involved in this activity. We do not need to perform the task of reconstruction of the Rashtra, only reawakening is needed.<br> <a href="about.html">know more</a></p>
+<div class="col-6 form-group">
+<label>Zone</label>
+<select class="form-control required" name="event-registration-interests" id="event-registration-interests">
+<option value="">-- Select One --</option>
+<option value="">GGV</option>
+<option value="">ABVP</option>
+<option value="">CIMS</option>
+<option value="">PSS</option>
+<option value="">Others</option>
+</select>
 </div>
+
+<div class="col-6 form-group">
+<label>Aadhar Number:</label>
+<input type="number" name="event-registration-first-name" id="event-registration-first-name" class="form-control required" value="" placeholder="Enter your Aadhar Number">
+</div>
+<div class="col-6 form-group">
+<label>Mobile Number:</label>
+<input type="number" name="event-registration-last-name" id="event-registration-last-name" class="form-control required" value="" placeholder="Enter your Mobile Number">
+</div>
+
+<div class="col-6 form-group">
+<label>Local Address:</label>
+<textarea name="event-registration-bio" id="event-registration-bio" class="form-control required" cols="30" rows="5"></textarea>
+</div>
+<div class="col-6 form-group">
+<label>Permanent Address:</label>
+<textarea name="event-registration-bio" id="event-registration-bio" class="form-control required" cols="30" rows="5"></textarea>
+</div>
+
+<div class="col-12 form-group">
+<label>Feedback:</label>
+<textarea name="event-registration-bio" id="event-registration-bio" class="form-control required" cols="30" rows="5"></textarea>
+</div>
+
+<div class="col-12 hidden">
+<input type="text" id="event-registration-botcheck" name="event-registration-botcheck" value="" />
+</div>
+<div class="col-12">
+<button type="submit" name="event-registration-submit" class="btn btn-secondary">Register</button>
+</div>
+
+<input type="hidden" name="prefix" value="event-registration-">
+</form>
+</div>
+
 <div class="clear"></div>
 </div>
-
-<center>
-	<div class="clear bottommargin-sm"></div>
-	<a href="#" class="button button-xlarge button-circle button-blue"><!-- <i class="mouse-pointer"></i> -->Registration Form</a>
-	
-	</div>
-	</center>
+<!-- </div> -->
+</div>
 </div>
 </div>
 </section>
-
 
 <footer id="footer" class="dark">
 <div class="container-fluid">
@@ -283,7 +309,6 @@ GAUTAM BUDDHA <br>भगवान् गौतम बुद्ध
 </div>
 
 </footer>
-
 </div>
 
 <div id="gotoTop" class="icon-angle-up"></div>
@@ -292,7 +317,10 @@ GAUTAM BUDDHA <br>भगवान् गौतम बुद्ध
 <script src="js/plugins.js"></script>
 
 <script src="js/functions.js"></script>
+<script>
+		jQuery(document).ready( function(){
+			
+		})
+	</script>
 </body>
-
-
 </html>
